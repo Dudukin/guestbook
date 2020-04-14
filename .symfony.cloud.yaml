@@ -17,7 +17,7 @@ build:
 
 relationships:
     database: "db:postgresql"
-    
+
 web:
     locations:
         "/":
