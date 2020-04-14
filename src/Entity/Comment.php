@@ -45,7 +45,7 @@ class Comment
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $phoroFilename;
+    private $photoFilename;
 
     public function __toString(): string
     {
@@ -117,14 +117,14 @@ class Comment
         return $this;
     }
 
-    public function getPhoroFilename(): ?string
+    public function getPhotoFilename(): ?string
     {
-        return $this->phoroFilename;
+        return $this->photoFilename;
     }
 
-    public function setPhoroFilename(?string $phoroFilename): self
+    public function setPhotoFilename(?string $photoFilename): self
     {
-        $this->phoroFilename = $phoroFilename;
+        $this->photoFilename = $photoFilename;
 
         return $this;
     }
